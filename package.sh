@@ -6,6 +6,7 @@ cd ..
 cp bin pkg/bin -r
 cp manifest.json pkg
 cp icon.png pkg
+cp README.md pkg
 cd pkg
 zip ../pkg.zip ./* -r
 cd ..
