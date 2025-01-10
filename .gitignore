@@ -8,4 +8,5 @@ obj/
 *.pck
 
 pkg/
+pkg.zip
 manifestation/
