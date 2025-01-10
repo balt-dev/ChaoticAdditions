@@ -10,7 +10,7 @@
     "Icon": "icon.png"
   },
   "name": "Heresy",
-  "version_number": 1,
+  "version_number": "1.0.0",
   "website_url": "https://github.com/balt-dev/Heresy",
   "description": "Walking on water, Jesus style!",
   "dependencies": []
