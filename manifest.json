@@ -4,13 +4,13 @@
   "Metadata": {
     "Name": "Heresy",
     "Author": "baltdev",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "Description": "Walking on water, Jesus style!",
     "Homepage": "https://github.com/balt-dev/Heresy",
     "Icon": "icon.png"
   },
   "name": "Heresy",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "website_url": "https://github.com/balt-dev/Heresy",
   "description": "Walking on water, Jesus style!",
   "dependencies": []
