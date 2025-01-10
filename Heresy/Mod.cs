@@ -1,15 +1,13 @@
 ﻿using GDWeave;
 
-namespace ChaoticAdditions;
+namespace Heresy;
 
 public class Mod : IMod {
     public Config Config;
 
     public Mod(IModInterface modInterface) {
         this.Config = modInterface.ReadConfig<Config>();
-        modInterface.RegisterScriptMod(new ExampleScriptMod(Config, modInterface.Logger));
-        
-        modInterface.Logger.Information(":3");
+        modInterface.RegisterScriptMod(new HeresyMod(Config, modInterface.Logger));
     }
 
     public void Dispose() {

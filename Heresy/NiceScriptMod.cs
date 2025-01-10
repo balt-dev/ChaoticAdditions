@@ -5,7 +5,7 @@ using GDWeave.Godot.Variants;
 using GDWeave.Modding;
 using Serilog;
 
-namespace ChaoticAdditions;
+namespace Heresy;
 
 public class NoMatchException : Exception {
     public NoMatchException() {}

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ChaoticAdditions;
+namespace Heresy;
 
 public class Config {
     [JsonInclude] public bool WaterToWine = false;

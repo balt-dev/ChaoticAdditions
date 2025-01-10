@@ -1,0 +1,12 @@
+{
+  "Id": "baltdev.Heresy",
+  "AssemblyPath": "bin/Heresy.dll",
+  "Metadata": {
+    "Name": "Heresy",
+    "Author": "baltdev",
+    "Version": "1.0.0",
+    "Description": "Walking on water, Jesus style!",
+    "Homepage": "https://github.com/balt-dev/Heresy",
+    "Icon": "icon.png"
+  }
+}

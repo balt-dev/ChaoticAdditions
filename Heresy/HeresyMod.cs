@@ -5,14 +5,14 @@ using GDWeave.Godot.Variants;
 using GDWeave.Modding;
 using Serilog;
 
-namespace ChaoticAdditions;
+namespace Heresy;
 
-public class ExampleScriptMod(Config config, ILogger logger) : NiceScriptMod(new() {
+public class HeresyMod(Config config, ILogger logger) : NiceScriptMod(new() {
     {
         "res://Scenes/Map/Props/water_main.gdc",
         (ref TokenCursor cur) => {
             if (!cur.TryMatchAhead(new FunctionWaiter("_ready"))) {
-                logger.Warning("Failed to match _ready");
+                logger.Warning("[[Heresy] Failed to match _ready for water_main.gd");
                 return;
             }
                             
@@ -29,7 +29,7 @@ public class ExampleScriptMod(Config config, ILogger logger) : NiceScriptMod(new
         (ref TokenCursor cur) => {
             if (!config.WaterToWine) return;
             if (!cur.TryMatchAhead(new FunctionWaiter("_custom_purchase"))) {
-                logger.Warning("Failed to match _custom_purchase");
+                logger.Warning("[Heresy] Failed to match _custom_purchase for button_item.gd");
                 return;
             }
             cur.Patch(ScriptTokenizer.Tokenize("""
@@ -44,7 +44,7 @@ public class ExampleScriptMod(Config config, ILogger logger) : NiceScriptMod(new
         "res://Scenes/Map/Zones/death_transport_zone.gdc",
         (ref TokenCursor cur) => {
             if (!cur.TryMatchAhead(new FunctionWaiter("_ready"))) {
-                logger.Warning("Failed to match _ready");
+                logger.Warning("[Heresy] Failed to match _ready for death_transport_zone.gd");
                 return;
             }
 
@@ -54,8 +54,6 @@ public class ExampleScriptMod(Config config, ILogger logger) : NiceScriptMod(new
                 add_to_group("water")
                 """, 1
             ));
-
-            logger.Information(cur.Display());
         }
     }
 }) {}
