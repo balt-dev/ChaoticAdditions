@@ -7,4 +7,5 @@ bin/
 obj/
 *.pck
 
+pkg/
 manifestation/
